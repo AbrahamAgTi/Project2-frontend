@@ -5,7 +5,7 @@ import AuthorsPage from "./pages/AuthorsPage";
 import ComicsPage from "./pages/ComicsPage";
 import PublishersPage from "./pages/PublishersPage";
 import MyArea from "./pages/MyPage";
-import Menubar from "./components/Menubar";
+
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path="/comics" element={<ComicsPage />} />
         <Route path="/publishers" element={<PublishersPage />} />
         <Route path="/myarea" element={<MyArea />} />
+        <Route path="*" element="Page not found" />
       </Routes>
     </div>
   );
