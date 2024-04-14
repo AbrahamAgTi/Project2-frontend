@@ -5,10 +5,13 @@ import AuthorsPage from "./pages/AuthorsPage";
 import ComicsPage from "./pages/ComicsPage";
 import PublishersPage from "./pages/PublishersPage";
 import MyArea from "./pages/MyPage";
+import Menubar from "./components/Menubar";
 
 function App() {
   return (
+
     <div className="App">
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/authors" element={<AuthorsPage />} />
